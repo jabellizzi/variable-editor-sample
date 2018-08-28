@@ -1,0 +1,28 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "webpack and babel demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack-dev-server --content-base dist --port 8000 --open",
+    "start": "npm run watch & npm run serve"
+  },
+  "author": "John Bellizzi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "rxjs": "^6.2.2",
+    "rxq": "^2.0.1"
+  }
+}
